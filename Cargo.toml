@@ -1,5 +1,5 @@
 [package]
-name = "catrs"
+name = "rscat"
 version = "0.1.0"
 authors = ["CityBear3"]
 edition = "2018"
