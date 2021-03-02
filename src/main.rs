@@ -16,8 +16,13 @@ fn main() {
         //println!("In file {}", filename);
 
         //ファイルへの可変なハンドルを得る
-        let mut f = File::open(filename).expect("File is not found");
-
+        let mut f = match File::open(filename) {
+            Ok(f) => f,
+            Err(e) => {
+                println!("error:{}", e);
+                return;
+            }
+        };
         let mut contents = String::new();
         //ファイルハンドルを引数として可変参照に渡す
         f.read_to_string(&mut contents)
