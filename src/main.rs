@@ -6,7 +6,6 @@ fn main() {
 
     //コマンドライン引数を取得する
     let args: Vec<String> = env::args().collect();
-
     let mut i = 1;
     let len = args.len();
 
