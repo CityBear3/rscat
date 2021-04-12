@@ -1,9 +1,8 @@
-fn main() {
-    //モジュールをスコープに導入する
-    use std::env;
-    use std::fs::File;
-    use std::io::prelude::*;
+use std::env;
+use std::fs::File;
+use std::io::prelude::*;
 
+fn main() {
     //コマンドライン引数を取得する
     let args: Vec<String> = env::args().collect();
     let mut i = 1;
