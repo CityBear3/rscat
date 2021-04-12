@@ -18,7 +18,7 @@ fn main() {
             Ok(f) => f,
             Err(e) => {
                 println!("error:{}", e);
-                return;
+                std::process::exit(-1);
             }
         };
         let mut contents = String::new();
