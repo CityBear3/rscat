@@ -9,7 +9,7 @@ fn main() {
     let len = args.len();
 
     while i != len {
-        //failenameを取得する
+        //filenameを取得する
         let filename = &args[i];
         //println!("In file {}", filename);
 
@@ -21,7 +21,9 @@ fn main() {
                 std::process::exit(-1);
             }
         };
+
         let mut contents = String::new();
+
         //ファイルハンドルを引数として可変参照に渡す
         f.read_to_string(&mut contents)
             .expect("something went wrong reading the file");
